@@ -5,13 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{847CBA45-0DE3-42D9-9C77-7EAC206D705B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quinntyne.Validation", "src\Quinntyne.Validation\Quinntyne.Validation.csproj", "{2985FF75-69BC-443E-A4C9-0CF270C96E8F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quinntyne.Models", "src\Quinntyne.Models\Quinntyne.Models.csproj", "{54D1368A-398F-414D-98AC-B58E9A88E842}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quinntyne", "src\Quinntyne\Quinntyne.csproj", "{348BCFAE-4B41-4688-9DF4-600C78D6F9D0}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Quinntyne.App", "src\Quinntyne.App\Quinntyne.App.esproj", "{9F64AD97-02B5-4223-9FEC-5D638C633E33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventSourcing", "src\EventSourcing\EventSourcing.csproj", "{7843C9EE-C1D6-4303-AB06-CFB72FB51992}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2985FF75-69BC-443E-A4C9-0CF270C96E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2985FF75-69BC-443E-A4C9-0CF270C96E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2985FF75-69BC-443E-A4C9-0CF270C96E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2985FF75-69BC-443E-A4C9-0CF270C96E8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{54D1368A-398F-414D-98AC-B58E9A88E842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54D1368A-398F-414D-98AC-B58E9A88E842}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54D1368A-398F-414D-98AC-B58E9A88E842}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,15 +33,19 @@ Global
 		{9F64AD97-02B5-4223-9FEC-5D638C633E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F64AD97-02B5-4223-9FEC-5D638C633E33}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F64AD97-02B5-4223-9FEC-5D638C633E33}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7843C9EE-C1D6-4303-AB06-CFB72FB51992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7843C9EE-C1D6-4303-AB06-CFB72FB51992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7843C9EE-C1D6-4303-AB06-CFB72FB51992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7843C9EE-C1D6-4303-AB06-CFB72FB51992}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2985FF75-69BC-443E-A4C9-0CF270C96E8F} = {847CBA45-0DE3-42D9-9C77-7EAC206D705B}
 		{54D1368A-398F-414D-98AC-B58E9A88E842} = {847CBA45-0DE3-42D9-9C77-7EAC206D705B}
 		{348BCFAE-4B41-4688-9DF4-600C78D6F9D0} = {847CBA45-0DE3-42D9-9C77-7EAC206D705B}
 		{9F64AD97-02B5-4223-9FEC-5D638C633E33} = {847CBA45-0DE3-42D9-9C77-7EAC206D705B}
+		{7843C9EE-C1D6-4303-AB06-CFB72FB51992} = {847CBA45-0DE3-42D9-9C77-7EAC206D705B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4ED1D3C1-7317-4422-8B91-B121E760157B}
