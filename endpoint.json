@@ -1,0 +1,76 @@
+{
+  "microservices": [
+    {
+      "name": "Quinntyne.Contents.Api",
+      "boundedContextName": "Contents",
+      "kind": "Api",
+      "productName": "Quinntyne"
+    }
+  ],
+  "productName": "Quinntyne",
+  "boundedContexts": [
+    {
+      "name": "Contents",
+      "aggregates": [
+        {
+          "name": "Content",
+          "properties": [
+            {
+              "name": "ContentId",
+              "kind": "Guid",
+              "propertyKindReference": null,
+              "key": true
+            },
+            {
+              "name": "Name",
+              "kind": "String"
+            },
+            {
+              "name": "Content",
+              "kind": "Json"
+            }
+          ],
+          "commands": [
+            {
+              "name": "CreateContent",
+              "kind": "Create",
+              "aggregate": null,
+              "productName": "Quinntyne"
+            },
+            {
+              "name": "UpdateContent",
+              "kind": "Update",
+              "aggregate": null,
+              "productName": "Quinntyne"
+            },
+            {
+              "name": "DeleteContent",
+              "kind": "Delete",
+              "aggregate": null,
+              "productName": "Quinntyne"
+            }
+          ],
+          "queries": [
+            {
+              "name": "GetContents",
+              "kind": "Get",
+              "aggregate": null,
+              "productName": null
+            },
+            {
+              "name": "GetContentById",
+              "kind": "GetById",
+              "aggregate": null,
+              "productName": null
+            }
+          ],
+          "entities": [],
+          "boundedContext": null
+        }
+      ],
+      "handles": [],
+      "productName": "Quinntyne"
+    }
+  ],
+  "messages": []
+}
