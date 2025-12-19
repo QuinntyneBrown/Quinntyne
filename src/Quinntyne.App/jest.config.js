@@ -3,14 +3,7 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
   testEnvironment: 'jsdom',
   testMatch: ['<rootDir>/src/**/*.spec.ts'],
-  moduleFileExtensions: ['ts', 'html', 'js', 'json'],
-  transform: {
-    '^.+\\.(ts|html)$': ['ts-jest', {
-      tsconfig: '<rootDir>/tsconfig.spec.json',
-      stringifyContentPathRegex: '\\.html$'
-    }],
-    '^.+\\.js$': 'babel-jest'
-  },
+  moduleFileExtensions: ['ts', 'html', 'js', 'json', 'mjs'],
   moduleNameMapper: {
     '^src/(.*)$': '<rootDir>/src/$1'
   },
