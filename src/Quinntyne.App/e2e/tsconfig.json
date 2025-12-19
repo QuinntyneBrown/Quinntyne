@@ -1,0 +1,7 @@
+{
+  "extends": "../src/Quinntyne.App/tsconfig.json",
+  "compilerOptions": {
+    "types": ["playwright"]
+  },
+  "include": ["**/*.ts"]
+}
